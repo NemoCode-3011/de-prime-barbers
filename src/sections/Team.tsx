@@ -12,9 +12,9 @@ const Team = () => {
       <div className="max-w-7xl mx-auto px-8">
         <div className="w-12 h-0.5 bg-accent mb-4" />
         <h2 className="font-heading text-4xl font-bold text-text-dark mb-12">Meet The Team</h2>
-        <div className="grid grid-cols-4 gap-6 h-[500px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 h-auto md:h-[500px]">
           {teams.map((team) => (
-            <article key={team.id} className="relative overflow-hidden cursor-pointer group">
+            <article key={team.id} className="relative overflow-hidden cursor-pointer group h-[400px]">
               <img src={team.image} alt={team.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 px-4 py-3">
                 <h3 className="text-text-primary font-heading text-lg">{team.name}</h3>

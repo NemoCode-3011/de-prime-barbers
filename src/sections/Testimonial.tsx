@@ -10,7 +10,7 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto px-8">
         <div className="w-12 h-0.5 bg-accent mb-4" />
         <h2 className="font-heading text-4xl font-bold text-text-dark mb-2">Testimonials</h2>
-        <div className="grid grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {testimonials.map((testimonial) => (
             <article key={testimonial.id} className="flex flex-col gap-4 p-8 border border-border">
               <h3 className="text-text-dark font-semibold text-sm">{testimonial.name}</h3>

@@ -57,7 +57,7 @@ const Pricing = () => {
         <h2 className="font-heading text-4xl font-bold text-text-primary mb-2">Our Services & Pricing</h2>
         <div>
           <h3>Featured Services</h3>
-          <div className='grid grid-cols-4 gap-6 mt-8 mb-16'>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 mb-16'>
             {featuredServices.map((service) => {
               const IconComponent = iconMap[service.icon as keyof typeof iconMap]
               return (
@@ -83,7 +83,7 @@ const Pricing = () => {
         </div>
         <div className="w-full h-0.5 bg-accent mb-4" />
         <h3 className="text-text-primary font-heading text-2xl mb-8 mt-16">Our Packages</h3>
-        <div className='grid grid-cols-3 gap-8 pt-3 '>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pt-3 '>
           {packages.map((pkg) => (
             <article key={pkg.name} className="flex flex-col gap-4 p-8 border border-border hover:border-accent transition-colors">
               <h3 className="font-heading text-xl text-text-primary">{pkg.name}</h3>

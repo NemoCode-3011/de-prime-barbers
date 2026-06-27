@@ -9,7 +9,7 @@ const About = () => {
             <h2 className="font-heading text-4xl font-bold text-text-dark mb-4">About De-Prime Barbers</h2>
             <p className="text-text-dark/70 text-base max-w-2xl">At De-Prime Barbers, exceptional grooming is more than a service, it's an experience. Precision cuts, expert beard grooming, and timeless style in an environment built for comfort and sophistication.</p>
           </div>
-          <div className="grid grid-cols-3 gap-8 pt-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-3 ">
             <article className="flex flex-col gap-4 p-10 border border-border">
               <Scissors className="text-accent w-8 h-8" />
               <h3 className="font-heading text-xl font-semibold text-text-dark">Skilled Barbers</h3>

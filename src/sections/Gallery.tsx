@@ -26,7 +26,7 @@ const Gallery = () => {
   ]
   return (
     <section id="gallery" className="bg-primary py-24">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <p className="text-accent text-sm uppercase tracking-widest mb-2">Gallery</p>
         <div className="w-12 h-0.5 bg-accent mb-4" />
         <div>

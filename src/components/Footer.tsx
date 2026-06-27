@@ -4,9 +4,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   const linkClass = "text-text-muted hover:text-text-primary transition-colors"
   return (
-    <footer className="bg-primary py-24">
-      <div className='max-w-7xl mx-auto px-8'>
-        <div className='grid grid-cols-4 gap-12'>
+    <footer className="bg-primary py-16 md:py-24">
+      <div className='max-w-7xl mx-auto px-6 md:px-8'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12'>
           <div>
             <img src={image1} alt="de-prime-image" className="h-40 w-auto" />
             <p className="text-text-muted text-sm mt-4 max-w-xs">Where Tradition Meets Modern Style</p>
@@ -36,7 +36,7 @@ const Footer = () => {
             <button className="border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-primary transition-colors mt-4">Book Now</button>
           </div>
         </div>
-        <div className="border-t border-border mt-16 pt-8 flex justify-between items-center">
+        <div className="border-t border-border mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-text-muted text-sm">© {new Date().getFullYear()} De-Prime Barbers. All rights reserved.</p>
           <div className="flex gap-4">
             <FaFacebook className="text-accent w-5 h-5 hover:text-accent-light cursor-pointer" />
