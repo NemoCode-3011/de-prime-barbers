@@ -42,9 +42,23 @@ const Gallery = () => {
           <div
             ref={sliderRef}
             className="flex overflow-x-auto gap-4 cursor-grab active:cursor-grabbing scrollbar-none"
-            style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}>
+            style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
+            onMouseDown={(e) => {
+              setIsDragging(true)
+              setStartX(e.pageX - sliderRef.current!.offsetLeft)
+              setScrollLeft(sliderRef.current!.scrollLeft)
+            }}
+            onMouseLeave={() => setIsDragging(false)}
+            onMouseUp={() => setIsDragging(false)}
+            onMouseMove={(e) => {
+              if (!isDragging) return
+              e.preventDefault()
+              const x = e.pageX - sliderRef.current!.offsetLeft
+              const walk = (x - startX) * 2
+              sliderRef.current!.scrollLeft = scrollLeft - walk
+            }}>
             {pictures.map((picture) => (
-              <article key={picture.id} className="min-w-[350px] h-[450px] flex-shrink-0">
+              <article key={picture.id} className="min-w-87.5 h-112.5 shrink-0">
                 <img src={picture.src} alt={picture.alt} className="w-full h-full object-cover" />
               </article>
             ))}
