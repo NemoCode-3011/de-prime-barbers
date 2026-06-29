@@ -97,7 +97,7 @@ const Pricing = () => {
           ))}
         </div>
         <div className="flex justify-center mt-16">
-          <button className="border border-accent text-accent px-6 py-3 w-fit hover:bg-accent hover:text-primary transition-colors">Book Now</button>
+          <button className="border border-accent text-accent px-6 py-3 w-fit hover:bg-accent hover:text-primary transition-colors rounded-md">Book Now</button>
         </div>
       </div>
     </section>

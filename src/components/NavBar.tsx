@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import image1 from "../assets/dpiage-2.png"
 import { Menu, X } from "lucide-react"
 const Navbar = () => {
-  const linkClass = "text-text-muted hover:text-text-primary transition-colors"
+  const linkClass = "relative text-text-muted hover:text-text-primary transition-colors text-sm uppercase tracking-widest group"
   const [scrolled, setScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,11 +24,26 @@ const Navbar = () => {
 
       {/* Desktop links */}
       <ul className="hidden md:flex items-center gap-8">
-        <li><a className={linkClass} href="#hero">Home</a></li>
-        <li><a className={linkClass} href="#services">Services</a></li>
-        <li><a className={linkClass} href="#about">About</a></li>
-        <li><a className={linkClass} href="#gallery">Gallery</a></li>
-        <li><a className={linkClass} href="#team">Team</a></li>
+        <li><a className={linkClass} href="#home">
+          Home
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a></li>
+        <li><a className={linkClass} href="#pricing">
+          Services
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a></li>
+        <li><a className={linkClass} href="#about">
+          About
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a></li>
+        <li><a className={linkClass} href="#gallery">
+          Gallery
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a></li>
+        <li><a className={linkClass} href="#team">
+          Team
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+        </a></li>
       </ul>
 
       {/* Right side */}
@@ -42,7 +57,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile dropdown */}
-      <ul className={`${isOpen ? "flex" : "hidden"} flex-col absolute top-full left-0 right-0 bg-primary px-8 py-6 gap-6`}>
+      <ul className={`${isOpen ? "flex" : "hidden"} flex-col absolute top-full left-0 right-0 bg-primary border-t border-accent px-8 py-6 gap-6`}>
         <li><a onClick={() => setIsOpen(false)} className={linkClass} href="#hero">Home</a></li>
         <li><a onClick={() => setIsOpen(false)} className={linkClass} href="#services">Services</a></li>
         <li><a onClick={() => setIsOpen(false)} className={linkClass} href="#about">About</a></li>

@@ -33,7 +33,7 @@ const Footer = () => {
           <div>
             <h3 className="text-text-primary font-heading text-lg mb-6">Ready for a fresh cut?</h3>
              <p className="text-text-muted text-sm mb-6">Book your appointment today and experience the De-Prime difference.</p>
-            <button className="border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-primary transition-colors mt-4">Book Now</button>
+            <button className="border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-primary transition-colors mt-4 rounded-md">Book Now</button>
           </div>
         </div>
         <div className="border-t border-border mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">

@@ -3,9 +3,9 @@ import barber2 from "../assets/barber2.jpg"
 import ceo from "../assets/ceo2.jpg"
 const Team = () => {
   const teams = [
-    { id: 1, title: "Owner/CEO", name: "Prince Adewale Adeniyi", image: ceo },
-    { id: 2, title: "Barber 1", name: "Fatai", image: barber1 },
-    { id: 3, title: "Barber 2", name: "Segun", image: barber2 },
+    { id: 1, title: "Owner/CEO", name: "John Bamidele", image: ceo },
+    { id: 2, title: "Barber 1", name: "Aaron Adeboyega", image: barber1 },
+    { id: 3, title: "Barber 2", name: "Segun Johnson", image: barber2 },
   ]
   return (
     <section id="team" className="bg-surface py-24">

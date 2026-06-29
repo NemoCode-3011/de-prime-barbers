@@ -1,7 +1,7 @@
 import heroimage1 from "../assets/bb-14.jpg"
 const HeroSection = () => {
   return (
-    <section className="bg-primary h-screen min-h-screen overflow-hidden relative">
+    <section id="home" className="bg-primary h-screen min-h-screen overflow-hidden relative">
       {/* Mobile — full bg image with overlay */}
       <div className="absolute inset-0 md:hidden z-0">
         <img src={heroimage1} alt="barber" className="w-full h-full object-cover object-top opacity-30" />
@@ -18,7 +18,7 @@ const HeroSection = () => {
             Precision cuts. Expert grooming. Timeless style.
           </p>
           <div className="flex flex-row items-center gap-8">
-            <button className="border border-accent text-accent px-6 py-3 w-fit hover:bg-accent hover:text-primary transition-colors">
+            <button className="border border-accent text-accent px-6 py-3 w-fit hover:bg-accent hover:text-primary transition-colors rounded-md">
               Book Now
             </button>
             <a href="#gallery" className="text-text-muted hover:text-text-primary transition-colors text-sm">
